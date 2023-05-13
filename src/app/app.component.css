@@ -1,0 +1,64 @@
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 600px;
+    height: 500px;
+    color: #000;
+    background-color: white;
+    margin-top: 80px;
+    border-radius: 19px;
+    box-shadow:3px 3px 6px rgb(0, 0, 0, .8);
+}
+
+.logoeEntrada{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+input {
+   margin-bottom: 10px;
+   width: 350px;
+   height: 30px;
+   border-radius: 19px;
+   border-color: black;
+   border: solid 1px;   
+}
+
+.peso{
+    
+}
+
+.altura {
+    margin-right: 5px;
+}
+
+.nome {
+    margin-right: 6px;
+}
+
+.email {
+    margin-right: 8px;
+}
+
+.resultado{
+    display: grid;
+    margin-left: 150px;
+}
+
+.botao{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border: solid 0px;
+    background-color: #32BAC5;
+    color: white;
+    margin-left: 320px;
+    margin-top: 10px;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    margin: 15px;
+}

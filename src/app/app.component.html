@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="logoeEntrada">
+    <img class="logo" src="../assets/logo.svg"/>
+    <div class="peso">
+      <label for="">Peso: </label>
+      <input type="number" name="peso" [(ngModel)]="peso"/>
+    </div>
+    <div class="altura">
+      <label for="">Altura: </label>
+      <input type="number" name="altura" [(ngModel)]="altura"/>
+    </div>
+    <div class="nome">
+      <label for="">Nome: </label>
+      <input type="text" placeholder="Digite seu nome..." name="nome" [(ngModel)]="nome"/>
+    </div>
+    <div class="email">
+      <label for="">E-mail: </label>
+      <input type="email" placeholder="Digite seu e-mail..." name="email" [(ngModel)]="email"/>
+    </div>
+    <div>
+      <button class="botao" (click)="calcularImc()">Calcular</button>
+    </div>
+  </div>
+  <hr>
+  <div class="resultado">
+    <h2>Seus Resultados</h2>
+    <label>IMC: {{resultado | number: '2.1-3'}}</label>
+    <label>Condição: {{condicao}}</label>
+    <label>Comentário: {{comentario}}</label>
+  </div>
+</div>
+<router-outlet></router-outlet>
